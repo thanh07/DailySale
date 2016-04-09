@@ -1,12 +1,12 @@
 <?php
-namespace Vokuro\Controllers;
+namespace dailysale\Controllers;
 
-use Vokuro\Forms\LoginForm;
-use Vokuro\Forms\SignUpForm;
-use Vokuro\Forms\ForgotPasswordForm;
-use Vokuro\Auth\Exception as AuthException;
-use Vokuro\Models\Users;
-use Vokuro\Models\ResetPasswords;
+use dailysale\Forms\LoginForm;
+use dailysale\Forms\SignUpForm;
+use dailysale\Forms\ForgotPasswordForm;
+use dailysale\Auth\Exception as AuthException;
+use dailysale\Models\Users;
+use dailysale\Models\ResetPasswords;
 
 /**
  * Controller used handle non-authenticated session actions like login/logout, user signup, and forgotten passwords

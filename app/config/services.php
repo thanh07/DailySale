@@ -11,9 +11,9 @@ use Phalcon\Session\Adapter\Files as SessionAdapter;
 use Phalcon\Flash\Direct as Flash;
 use Phalcon\Logger\Adapter\File as FileLogger;
 use Phalcon\Logger\Formatter\Line as FormatterLine;
-use Vokuro\Auth\Auth;
-use Vokuro\Acl\Acl;
-use Vokuro\Mail\Mail;
+use dailysale\Auth\Auth;
+use dailysale\Acl\Acl;
+use dailysale\Mail\Mail;
 
 /**
  * The FactoryDefault Dependency Injector automatically register the right services providing a full stack framework
@@ -104,7 +104,7 @@ $di->set('crypt', function () use ($config) {
  */
 $di->set('dispatcher', function () {
     $dispatcher = new Dispatcher();
-    $dispatcher->setDefaultNamespace('Vokuro\Controllers');
+    $dispatcher->setDefaultNamespace('dailysale\Controllers');
     return $dispatcher;
 });
 

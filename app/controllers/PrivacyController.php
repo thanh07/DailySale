@@ -1,5 +1,5 @@
 <?php
-namespace Vokuro\Controllers;
+namespace dailysale\Controllers;
 
 /**
  * Display the privacy page.

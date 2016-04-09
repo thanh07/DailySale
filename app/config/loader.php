@@ -8,10 +8,10 @@ $loader = new Loader();
  * We're a registering a set of directories taken from the configuration file
  */
 $loader->registerNamespaces([
-    'Vokuro\Models'      => $config->application->modelsDir,
-    'Vokuro\Controllers' => $config->application->controllersDir,
-    'Vokuro\Forms'       => $config->application->formsDir,
-    'Vokuro'             => $config->application->libraryDir
+    'dailysale\Models'      => $config->application->modelsDir,
+    'dailysale\Controllers' => $config->application->controllersDir,
+    'dailysale\Forms'       => $config->application->formsDir,
+    'dailysale'             => $config->application->libraryDir
 ]);
 
 $loader->register();

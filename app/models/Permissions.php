@@ -1,5 +1,5 @@
 <?php
-namespace Vokuro\Models;
+namespace dailysale\Models;
 
 use Phalcon\Mvc\Model;
 

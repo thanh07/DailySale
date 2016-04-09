@@ -1,5 +1,5 @@
 <?php
-namespace Vokuro\Forms;
+namespace dailysale\Forms;
 
 use Phalcon\Forms\Form;
 use Phalcon\Forms\Element\Password;

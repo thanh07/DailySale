@@ -1,14 +1,14 @@
 <?php
-namespace Vokuro\Acl;
+namespace dailysale\Acl;
 
 use Phalcon\Mvc\User\Component;
 use Phalcon\Acl\Adapter\Memory as AclMemory;
 use Phalcon\Acl\Role as AclRole;
 use Phalcon\Acl\Resource as AclResource;
-use Vokuro\Models\Profiles;
+use dailysale\Models\Profiles;
 
 /**
- * Vokuro\Acl\Acl
+ * dailysale\Acl\Acl
  */
 class Acl extends Component
 {

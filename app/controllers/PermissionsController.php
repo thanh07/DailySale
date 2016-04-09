@@ -1,8 +1,8 @@
 <?php
-namespace Vokuro\Controllers;
+namespace dailysale\Controllers;
 
-use Vokuro\Models\Profiles;
-use Vokuro\Models\Permissions;
+use dailysale\Models\Profiles;
+use dailysale\Models\Permissions;
 
 /**
  * View and define permissions for the various profile levels.

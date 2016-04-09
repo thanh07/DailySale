@@ -1,5 +1,5 @@
 <?php
-namespace Vokuro\Mail;
+namespace dailysale\Mail;
 
 class Exception extends \Exception
 {

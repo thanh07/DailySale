@@ -1,16 +1,16 @@
 <?php
-namespace Vokuro\Controllers;
+namespace dailysale\Controllers;
 
 use Phalcon\Tag;
 use Phalcon\Mvc\Model\Criteria;
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use Vokuro\Forms\ChangePasswordForm;
-use Vokuro\Forms\UsersForm;
-use Vokuro\Models\Users;
-use Vokuro\Models\PasswordChanges;
+use dailysale\Forms\ChangePasswordForm;
+use dailysale\Forms\UsersForm;
+use dailysale\Models\Users;
+use dailysale\Models\PasswordChanges;
 
 /**
- * Vokuro\Controllers\UsersController
+ * dailysale\Controllers\UsersController
  * CRUD to manage users
  */
 class UsersController extends ControllerBase
@@ -37,7 +37,7 @@ class UsersController extends ControllerBase
     {
         $numberPage = 1;
         if ($this->request->isPost()) {
-            $query = Criteria::fromInput($this->di, 'Vokuro\Models\Users', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'dailysale\Models\Users', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
         } else {
             $numberPage = $this->request->getQuery("page", "int");

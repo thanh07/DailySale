@@ -1,12 +1,12 @@
 {
-    "name": "phalcon/vokuro",
+    "name": "phalcon/dailysale",
     "description": "This is a sample application for the Phalcon PHP Framework",
     "version": "1.2.0",
     "keywords": [
         "phalcon",
         "framework",
         "sample app",
-        "vokuro"
+        "dailysale"
     ],
     "type": "library",
     "license": "BSD-3",

@@ -1,8 +1,8 @@
 <?php
-namespace Vokuro\Controllers;
+namespace dailysale\Controllers;
 
-use Vokuro\Models\EmailConfirmations;
-use Vokuro\Models\ResetPasswords;
+use dailysale\Models\EmailConfirmations;
+use dailysale\Models\ResetPasswords;
 
 /**
  * UserControlController

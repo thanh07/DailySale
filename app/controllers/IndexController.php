@@ -1,5 +1,5 @@
 <?php
-namespace Vokuro\Controllers;
+namespace dailysale\Controllers;
 
 /**
  * Display the default index page.

@@ -1,15 +1,15 @@
 <?php
-namespace Vokuro\Auth;
+namespace dailysale\Auth;
 
 use Phalcon\Mvc\User\Component;
-use Vokuro\Models\Users;
-use Vokuro\Models\RememberTokens;
-use Vokuro\Models\SuccessLogins;
-use Vokuro\Models\FailedLogins;
+use dailysale\Models\Users;
+use dailysale\Models\RememberTokens;
+use dailysale\Models\SuccessLogins;
+use dailysale\Models\FailedLogins;
 
 /**
- * Vokuro\Auth\Auth
- * Manages Authentication/Identity Management in Vokuro
+ * dailysale\Auth\Auth
+ * Manages Authentication/Identity Management in dailysale
  */
 class Auth extends Component
 {
@@ -57,7 +57,7 @@ class Auth extends Component
     /**
      * Creates the remember me environment settings the related cookies and generating tokens
      *
-     * @param \Vokuro\Models\Users $user
+     * @param \dailysale\Models\Users $user
      * @throws Exception
      */
     public function saveSuccessLogin($user)
@@ -112,7 +112,7 @@ class Auth extends Component
     /**
      * Creates the remember me environment settings the related cookies and generating tokens
      *
-     * @param \Vokuro\Models\Users $user
+     * @param \dailysale\Models\Users $user
      */
     public function createRememberEnvironment(Users $user)
     {
@@ -199,7 +199,7 @@ class Auth extends Component
     /**
      * Checks if the user is banned/inactive/suspended
      *
-     * @param \Vokuro\Models\Users $user
+     * @param \dailysale\Models\Users $user
      * @throws Exception
      */
     public function checkUserFlags(Users $user)
@@ -278,7 +278,7 @@ class Auth extends Component
     /**
      * Get the entity related to user in the active identity
      *
-     * @return \Vokuro\Models\Users
+     * @return \dailysale\Models\Users
      * @throws Exception
      */
     public function getUser()
