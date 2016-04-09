@@ -3,13 +3,15 @@
  * Created by PhpStorm.
  * User: lttun
  * Date: 4/9/2016
- * Time: 1:33 PM
+ * Time: 2:00 PM
  */
+
 namespace dailysale\Models;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Validator\Uniqueness;
-class Category extends Model{
+class Suppliers extends Model
+{
     /**
      * @var integer
      */
@@ -20,14 +22,19 @@ class Category extends Model{
      */
     public $name;
 
+    public $contact_name;
+    public $address;
+    public $city;
+    public $phone;
+
     /**
-     * Category initializer
+     * Suppliers initializer
      */
     public function initialize()
     {
-        $this->hasMany('id', 'Products', 'category_id', array(
+        $this->hasMany('id', 'Products', 'supplier_id', array(
             'foreignKey' => array(
-                'message' => 'Category cannot be deleted because it\'s used in Products'
+                'message' => 'Supplier cannot be deleted because it\'s used in Products'
             )
         ));
     }
