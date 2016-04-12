@@ -9,6 +9,8 @@ namespace dailysale\Models;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Validator\Uniqueness;
+use Phalcon\Mvc\Model\Relation;
+//use dailysale\models\Products as Products;
 class Category extends Model{
     /**
      * @var integer
@@ -25,10 +27,12 @@ class Category extends Model{
      */
     public function initialize()
     {
-        $this->hasMany('id', 'Products', 'category_id', array(
+        $this->hasMany('id', 'dailysale\Models\Products', 'category_id', array(
             'foreignKey' => array(
+//                "action" => Relation::ACTION_CASCADE,
                 'message' => 'Category cannot be deleted because it\'s used in Products'
             )
         ));
     }
+
 }

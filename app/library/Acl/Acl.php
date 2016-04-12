@@ -50,7 +50,13 @@ class Acl extends Component
         ),
         'permissions' => array(
             'index'
-        )
+        ),
+        'category'=>array(
+            'index',
+            'create',
+            'edit',
+            'delete'
+        ),
     );
 
     /**

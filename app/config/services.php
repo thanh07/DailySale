@@ -71,6 +71,7 @@ $di->set('db', function () use ($config) {
         'dbname' => $config->database->dbname
     ));
 });
+$di->set('modelsManager', new Phalcon\Mvc\Model\Manager());
 
 /**
  * If the configuration specify the use of metadata adapter use it or use memory otherwise
@@ -148,6 +149,9 @@ $di->set('acl', function () {
     return new Acl();
 });
 
+//$di->set('modelsManager', function() {
+//    return new Phalcon\Mvc\Model\Manager();
+//});
 /**
  * Logger service
  */

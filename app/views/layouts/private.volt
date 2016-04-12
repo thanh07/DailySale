@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      {{ link_to(null, 'class': 'brand', 'Vökuró')}}
+      {{ link_to(null, 'class': 'brand', 'Daily Sale')}}
         <div class="nav-collapse">
 
           <ul class="nav">
@@ -15,7 +15,10 @@
               'Home': null,
               'Users': 'users',
               'Profiles': 'profiles',
-              'Permissions': 'permissions'
+              'Permissions': 'permissions',
+               'Category':'category',
+                'Products':'products',
+                'Suppliers':'suppliers'
             ] -%}
 
             {%- for key, value in menus %}

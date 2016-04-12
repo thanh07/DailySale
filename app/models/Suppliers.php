@@ -21,9 +21,17 @@ class Suppliers extends Model
      * @var string
      */
     public $name;
-
+    /**
+     * @var string
+     */
     public $contact_name;
+    /**
+     * @var string
+     */
     public $address;
+    /**
+     * @var string
+     */
     public $city;
     public $phone;
 
@@ -32,7 +40,7 @@ class Suppliers extends Model
      */
     public function initialize()
     {
-        $this->hasMany('id', 'Products', 'supplier_id', array(
+        $this->hasMany('id', 'dailysale\Models\Products', 'supplier_id', array(
             'foreignKey' => array(
                 'message' => 'Supplier cannot be deleted because it\'s used in Products'
             )
